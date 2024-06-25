@@ -1,0 +1,27 @@
+{
+	"name": "SqlServer_ls",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-A84FT6I",
+			"database": "AdventureWorksLT2017",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "mrk",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "kv_dp_practice_ls",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
