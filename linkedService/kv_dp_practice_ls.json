@@ -1,0 +1,10 @@
+{
+	"name": "kv_dp_practice_ls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kv-dp-practice.vault.azure.net/"
+		}
+	}
+}
